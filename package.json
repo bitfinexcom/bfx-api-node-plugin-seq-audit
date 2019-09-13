@@ -1,6 +1,6 @@
 {
   "name": "bfx-api-node-plugin-seq-audit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatic sequence number verification plugin for the Bitfinex Node API",
   "engines": {
     "node": ">=7"
