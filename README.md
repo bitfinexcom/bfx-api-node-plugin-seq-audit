@@ -45,7 +45,7 @@ subscribe(wsState, 'trades', { symbol: SYMBOL })
 
 ### Docs
 
-For an executable example, see `examples/usage.js`
+For an executable example, [see `examples/usage.js`](/examples/usage.js)
 
 ### Contributing
 
