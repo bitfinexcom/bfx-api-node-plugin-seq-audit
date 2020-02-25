@@ -2,7 +2,7 @@
 'use strict'
 
 const assert = require('assert')
-const onWSMessage = require('ws/message')
+const onWSMessage = require('../../lib/ws/message')
 
 describe('ws:message', () => {
   it('emits error on invalid public seq #', (done) => {
