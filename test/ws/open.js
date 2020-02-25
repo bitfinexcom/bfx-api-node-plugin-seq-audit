@@ -3,7 +3,7 @@
 
 const assert = require('assert')
 const { Config } = require('bfx-api-node-core')
-const onWSOpen = require('ws/open')
+const onWSOpen = require('../../lib/ws/open')
 
 describe('ws:open', () => {
   it('enables sequencing flag', (done) => {
