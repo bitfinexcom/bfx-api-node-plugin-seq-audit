@@ -2,6 +2,7 @@
 'use strict'
 
 const assert = require('assert')
+const _isError = require('lodash/isError')
 const onWSMessage = require('../../lib/ws/message')
 
 describe('ws:message', () => {
@@ -18,7 +19,7 @@ describe('ws:message', () => {
       ev: {
         emit: (eventName, data) => {
           if (eventName === 'error') {
-            assert(data instanceof Error)
+            assert(_isError(data))
             assert.strictEqual(n, 1)
             done()
           }
@@ -44,7 +45,7 @@ describe('ws:message', () => {
       ev: {
         emit: (eventName, data) => {
           if (eventName === 'error') {
-            assert(data instanceof Error)
+            assert(_isError(data))
             assert.strictEqual(n, 1)
             done()
           }

@@ -2,9 +2,12 @@
 
 [![Build Status](https://travis-ci.org/bitfinexcom/bfx-api-node-plugin-seq-audit.svg?branch=master)](https://travis-ci.org/bitfinexcom/bfx-api-node-plugin-seq-audit)
 
-This plugin enables the sequence reporting flag upon connecting, and emits an `error` event upon receiving an invalid sequence number.
+This plugin enables the sequence reporting flag upon connecting, and emits an
+`error` event upon receiving an invalid sequence number.
 
-Note that the manager proxies the event as `ws2:error`. If subscribing on a socket instance (`wsState.ev.on(...)`) use the internal event name, otherwise use the manager name with `manager.onWS(...)`.
+Note that the manager proxies the event as `ws2:error`. If subscribing on a
+socket instance (`wsState.ev.on(...)`) use the internal event name, otherwise
+use the manager name with `manager.onWS(...)`.
 
 ### Features
 
@@ -18,6 +21,7 @@ npm i --save bfx-api-node-plugin-seq-audit
 ```
 
 ### Quickstart & Example
+
 ```js
 const debug = require('debug')('bfx:api:plugins:seq-audit:example')
 const { Manager, subscribe } = require('bfx-api-node-core')
@@ -45,7 +49,8 @@ subscribe(wsState, 'trades', { symbol: SYMBOL })
 
 ### Docs
 
-For an executable example, [see `examples/usage.js`](/examples/usage.js)
+API documentation can be found in [`docs/reference.md`](docs/reference.md), and
+examples in the [`examples`](examples) folder.
 
 ### Contributing
 
